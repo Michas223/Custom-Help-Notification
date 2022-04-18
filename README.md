@@ -1,4 +1,4 @@
-# Custom-Help-Notification
+# Custom-Help-Notification - Michaś#4066
 
 Wchodzimy w es_extended/client/functions.lua
 Szukamy linijki `ESX.ShowHelpNotification = function(msg)`
@@ -16,8 +16,7 @@ end
 
 #
 
-W skrypcie w którym chcemy to dodać szukamy ESX.ShowHelpNotification
-*Przykładowa taka funkcja*
+Przykład użycia `ESX.ShowHelpNotification` w skrypcie
 ```
 CreateThread(function()
 	Citizen.Wait(2000)
@@ -53,11 +52,11 @@ CreateThread(function()
 end)
 ```
 
+#
+
 Tam gdzie widzimy `~INPUT_...~`
 
 Zamieniamy na `<span style="button">przycisk</span>`
-
-#
 
 Na początku funkcji dodajemy `local shownotify = false`
 
